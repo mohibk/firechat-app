@@ -2,6 +2,8 @@ import React, { useRef, useState } from 'react';
 import firebase from 'firebase/app';
 import { firebaseApp } from '../firebase';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
+import { RiSendPlaneFill } from 'react-icons/ri';
+import { AiOutlineSend } from 'react-icons/ai';
 
 import ChatMessage from './ChatMessage';
 
@@ -46,7 +48,9 @@ function ChatRoom() {
           type="text"
         />
 
-        <button type="submit">🚀</button>
+        <button type="submit" className="button__Send">
+          <RiSendPlaneFill />
+        </button>
       </form>
     </>
   );

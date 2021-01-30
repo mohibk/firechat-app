@@ -10,9 +10,12 @@ function SignIn() {
     auth.signInWithPopup(googleProvider);
   };
   return (
-    <button onClick={signInWithGoogle} className="sign-in">
-      <FcGoogle className="google-button" /> Sign in with Google
-    </button>
+    <div className="signIn__Page">
+      <p className="signIn__Welcome">Welcome to Firechat</p>
+      <button onClick={signInWithGoogle} className="signIn">
+        <FcGoogle className="google-button" /> Sign in with Google
+      </button>
+    </div>
   );
 }
 

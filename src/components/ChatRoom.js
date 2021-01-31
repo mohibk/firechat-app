@@ -3,8 +3,6 @@ import firebase from 'firebase/app';
 import { firebaseApp } from '../firebase';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import { RiSendPlaneFill } from 'react-icons/ri';
-import { AiOutlineSend } from 'react-icons/ai';
-
 import ChatMessage from './ChatMessage';
 
 const auth = firebase.auth();
@@ -13,7 +11,7 @@ const firestore = firebaseApp.firestore();
 function ChatRoom() {
   const dummy = useRef();
   const messagesRef = firestore.collection('messages');
-  const query = messagesRef.orderBy('createdAt').limit(50);
+  const query = messagesRef.orderBy('createdAt').limit(1000);
 
   const [messages] = useCollectionData(query, { idField: 'id' });
   const [formValue, setFormValue] = useState('');
@@ -48,7 +46,7 @@ function ChatRoom() {
           type="text"
         />
 
-        <button type="submit" className="button__Send">
+        <button type="submit" disabled={!formValue} className="button__Send">
           <RiSendPlaneFill />
         </button>
       </form>

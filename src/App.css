@@ -6,14 +6,10 @@ body {
   text-align: center;
   max-width: 728px;
   margin: 0 auto;
-  /* border-radius: 30px;
-  margin: 50px auto; */
 }
 
 .App header {
   background-color: #1976d2;
-  /* background-color: #acc6ff; */
-  /* height: 8vh; */
   height: 60px;
   color: white;
   position: fixed;
@@ -27,32 +23,16 @@ body {
   padding: 10px;
   box-sizing: border-box;
 }
-/* .App header h1 {
-  font-size: 40px;
-  background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);
-  background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
-  background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
-/* .App header h1 {
-  color: #e72c83;
-} */
 
 .App section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  /* background-color: rgb(40, 37, 53); */
   background-color: #f3f6fb;
-  /* background-color: #0b93f6; */
 }
 main {
   padding: 10px;
-  /* height: 80vh; */
   margin: 10vh 0 10vh;
   overflow-y: scroll;
   display: flex;
@@ -64,7 +44,6 @@ main::-webkit-scrollbar {
 }
 
 main::-webkit-scrollbar-track {
-  /* background: #1e1e24; */
   background-color: #0b93f6;
 }
 
@@ -73,11 +52,9 @@ main::-webkit-scrollbar-thumb {
 }
 
 form {
-  /* height: 10vh; */
   position: fixed;
   bottom: 0;
   border-radius: 10px;
-  /* background-color: blue; */
   width: 100%;
   max-width: 728px;
   display: flex;
@@ -86,7 +63,6 @@ form {
 
 form button {
   width: 20%;
-  /* background-color: rgb(56, 56, 143); */
   outline: none;
 }
 
@@ -94,7 +70,6 @@ input {
   line-height: 1.5;
   width: 100%;
   font-size: 1.5rem;
-  /* background: rgb(58, 58, 58); */
   background-color: #fff;
   border-radius: 30px;
   height: 50px;
@@ -106,7 +81,6 @@ input {
 }
 
 button {
-  /* background-color: #282c34; */
   background-color: #acc6ff;
   border: none;
   border-radius: 30px;
@@ -130,7 +104,6 @@ button {
 }
 
 button:disabled {
-  /* opacity: 0.5; */
   cursor: not-allowed;
   background-color: #d3ddf5;
 }
